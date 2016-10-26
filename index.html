@@ -11,10 +11,10 @@
         <div class="container">
             <img src="#" alt="glaccy" class="main-logo">
             <nav class="main-menu">
-                <ul>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">О Компании</a></li>
+                <ul class="main-menu__list">
+                    <li class="main-menu__item"><a href="#">Каталог</a></li>
+                    <li class="main-menu__item"><a href="#">Доставка и оплата</a></li>
+                    <li class="main-menu__item"><a href="#">О Компании</a></li>
                 </ul>
             </nav>
             <div class="user-navigation">
@@ -36,62 +36,74 @@
     </header>
     <main>
         <div class="container">
-            <div class="gift-chocolate">
-                <h2>Малинка даром!</h2>
-                <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                <a href="#">Хочу варенье!</a>
+            <div class="gift__row">
+                <div class="row-blocks">
+                    <h2>Малинка даром!</h2>
+                    <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                    <a href="#">Хочу варенье!</a>
+                </div>
+                <div class="gift__chocolate row-block">
+                    <h2>Шоколадки даром!</h2>
+                    <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
+                    <a href="#">Хочу шоколадки!</a>
+                </div>
             </div>
-            <div class="gift-raspberries">
-                <h2>Шоколадки даром!</h2>
-                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
-                <a href="#">Хочу шоколадки!</a>
-            </div>
-            <div class="gallery-items">
-                <!-- (div.gallery-item__item-block>div>img^span.hit+span.price+b)*4 -->
-                <div class="gallery-item__item-block">
+            <div class="gallery">
+                <div class="gallery__item">
                     <div><img src="#" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
                     <span class="hit"></span>
                     <span class="price"></span>
                     <b>Сливочное с апельсиновым джемом и цитрусовой стружкой</b>
+                    <button type="button" name="button"></button>
                 </div>
-                <div class="gallery-item__item-block">
+                <div class="gallery__item">
                     <div><img src="#" alt="Сливочно-кофейное с кусочками шоколада"></div>
                     <span class="hit"></span>
                     <span class="price"></span>
                     <b>Сливочно-кофейное с кусочками шоколада</b>
+                    <button type="button" name="button"></button>
                 </div>
-                <div class="gallery-item__item-block">
+                <div class="gallery__item">
                     <div><img src="#" alt="Сливочно-клубничное с присыпкой из белого шоколада"></div>
                     <span class="hit"></span>
                     <span class="price"></span>
                     <b>Сливочно-клубничное с присыпкой из белого шоколада</b>
+                    <button type="button" name="button"></button>
                 </div>
-                <div class="gallery-item__item-block">
+                <div class="gallery__item">
                     <div><img src="#" alt="Сливочное крем-брюле с карамельной подливкой"></div>
                     <span class="hit"></span>
                     <span class="price"></span>
                     <b>Сливочное крем-брюле с карамельной подливкой</b>
+                    <button type="button" name="button"></button>
                 </div>
-
-                <div class="product-benefits">
-                    <div class="product-benefits__left-collumn">
-                        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-                        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                <div class="benefits">
+                    <ul class="benefits__list">
+                        <li class="benefits__item benefits__icon_ice-cream">
+                            <p class="benefit__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                        </li>
+                        <li class="benefits__item benefits__icon_leaf">
+                            <p class="benefit__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                        </li>
+                        <li class="benefits__item benefits__icon_cow">
+                            <p class="benefit__text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                        </li>
+                        <li class="benefits__item benefits__icon_termometer">
+                            <p class="benefit__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row-blocks">
+                    <div class="block-news-preview row-block">
+                        <b>Новое в нашем блоге</b>
+                        <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
                     </div>
-                    <div class="product-benefits__right-collumn">
-                        <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-                        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+                    <div class="subscription row-block">
+                        <form class="email-form" action="index.html" method="post">
+                            <input type="email">
+                            <button type="button" name="button">Отправить</button>
+                        </form>
                     </div>
-                </div>
-                <div class="block-news-preview">
-                    <b></b>
-                    <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
-                </div>
-                <div class="subscription">
-                    <form class="email-form" action="index.html" method="post">
-                        <input type="email">
-                        <button type="button" name="button">Отправить</button>
-                    </form>
                 </div>
                 <div class="store-address">
                     Адрес главного офиса и офлайн магазина:<br>
