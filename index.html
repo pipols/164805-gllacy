@@ -9,111 +9,122 @@
 
 <body>
     <header>
-        <div class="container">
-            <img src="img/gllacy-shop-logo.svg" alt="gllacy" class="main-logo">
-            <nav class="main-menu">
-                <ul class="main-menu__list">
-                    <li class="main-menu__item"><a href="catalog.html">Каталог</a></li>
-                    <li class="main-menu__item"><a href="#">Доставка и оплата</a></li>
-                    <li class="main-menu__item"><a href="#">О Компании</a></li>
-                </ul>
-            </nav>
+        <div class="container header__container">
+            <div class="main-menu_wrap">
+                <img src="img/gllacy-shop-logo.svg" alt="gllacy" class="main-logo">
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item"><a class="main-menu__item_link" href="catalog.html">Каталог</a></li>
+                        <li class="main-menu__item"><a class="main-menu__item_link" href="#">Доставка и оплата</a></li>
+                        <li class="main-menu__item"><a class="main-menu__item_link" href="#">О Компании</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="user-navigation">
                 <div class="user-navigation__search">
-                    <a href="#"></a>
+                    <a class="user-navigation__search_link" href="#"></a>
                 </div>
                 <div class="user-navigation__login">
-                    <a href="#"></a>
+                    <a class="user-navigation__login_link" href="#">Вход</a>
                 </div>
                 <div class="user-navigation__basket">
-                    <a href="#"></a>
+                    <a class="user-navigation__basket_link" href="#">Пусто</a>
                 </div>
             </div>
             <div class="time-job">
-                <b>С 10 до 20, ежедевно</b>
-                <b>8 812 450-25-25</b>
+                <b class="time-job__time">С 10 до 20, ежедевно</b><br>
+                <b class="time-job__tel">8 812 450-25-25</b>
             </div>
         </div>
     </header>
     <main>
         <div class="container">
             <div class="gift__row">
-                <div class="gift__raspberries gift__row-blocks">
-                    <h2>Малинка даром!</h2>
-                    <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                    <a href="#">Хочу варенье!</a>
+                <div class="gift__raspberries gift__row-block">
+                    <h2 class="gift__row-block_title">Малинка даром!</h2>
+                    <p class="gift__row-block_text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                    <a class="gift__row-block_link btn" href="#">Хочу варенье!</a>
                 </div>
                 <div class="gift__chocolate gift__row-block">
-                    <h2>Шоколадки даром!</h2>
-                    <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
-                    <a href="#">Хочу шоколадки!</a>
+                    <h2 class="gift__row-block_title">Шоколадки даром!</h2>
+                    <p class="gift__row-block_text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
+                    <a class="gift__row-block_link btn" href="#">Хочу шоколадки!</a>
                 </div>
             </div>
             <div class="gallery">
                 <div class="gallery__item">
-                    <div><img src="#" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
-                    <span class="hit"></span>
-                    <span class="price"></span>
-                    <b>Сливочное с апельсиновым джемом и цитрусовой стружкой</b>
-                    <button type="button" name="button"></button>
-                </div>
-                <div class="gallery__item">
-                    <div><img src="#" alt="Сливочно-кофейное с кусочками шоколада"></div>
-                    <span class="hit"></span>
-                    <span class="price"></span>
-                    <b>Сливочно-кофейное с кусочками шоколада</b>
-                    <button type="button" name="button"></button>
-                </div>
-                <div class="gallery__item">
-                    <div><img src="#" alt="Сливочно-клубничное с присыпкой из белого шоколада"></div>
-                    <span class="hit"></span>
-                    <span class="price"></span>
-                    <b>Сливочно-клубничное с присыпкой из белого шоколада</b>
-                    <button type="button" name="button"></button>
-                </div>
-                <div class="gallery__item">
-                    <div><img src="#" alt="Сливочное крем-брюле с карамельной подливкой"></div>
-                    <span class="hit"></span>
-                    <span class="price"></span>
-                    <b>Сливочное крем-брюле с карамельной подливкой</b>
-                    <button type="button" name="button"></button>
-                </div>
-                <div class="benefits">
-                    <ul class="benefits__list">
-                        <li class="benefits__item benefits__icon_ice-cream">
-                            <p class="benefit__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-                        </li>
-                        <li class="benefits__item benefits__icon_leaf">
-                            <p class="benefit__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-                        </li>
-                        <li class="benefits__item benefits__icon_cow">
-                            <p class="benefit__text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-                        </li>
-                        <li class="benefits__item benefits__icon_termometer">
-                            <p class="benefit__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="row-blocks">
-                    <div class="block-news-preview row-block">
-                        <b>Новое в нашем блоге</b>
-                        <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
-                    </div>
-                    <div class="subscription row-block">
-                        <form class="email-form" action="index.html" method="post">
-                            <input type="email">
-                            <button type="button" name="button">Отправить</button>
-                        </form>
+                    <div class="gallery__item_wrap">
+                        <img src="img/ice-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                        <span class="hit"></span>
+                        <span class="price"></span>
+                        <a>Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                        <button type="button" name="button"></button>
                     </div>
                 </div>
-                <div class="store-address">
-                    Адрес главного офиса и офлайн магазина:<br>
-                    <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b><br> Для заказов по телефону:<br>
-                    <b>8 812 450-25-25</b><br> (с 10 до 20 ежедневно)
-                    <form class="feedback-form" action="index.html" method="post">
-                        <button class="feedback-form__btn" type="button" name="button"></button>
+                <div class="gallery__item">
+                    <div class="gallery__item_wrap">
+                        <img src="img/ice-2.png" alt="Сливочно-кофейное с кусочками шоколада">
+                        <span class="hit"></span>
+                        <span class="price"></span>
+                        <a>Сливочно-кофейное с кусочками шоколада</a>
+                        <button type="button" name="button"></button></div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__item_wrap"><img src="img/ice-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                        <span class="hit"></span>
+                        <span class="price"></span>
+                        <a>Сливочно-клубничное с присыпкой из белого шоколада</a>
+                        <button type="button" name="button"></button></div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__item_wrap"><img src="img/ice-4.png" alt="Сливочное крем-брюле с карамельной подливкой">
+                        <span class="hit"></span>
+                        <span class="price"></span>
+                        <a>Сливочное крем-брюле с карамельной подливкой</a>
+                        <button type="button" name="button"></button></div>
+                </div>
+            </div>
+            <div class="benefits">
+                <h2 class="benefits__title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+                <ul class="benefits__list">
+                    <li class="benefits__item benefits__icon_ice-cream">
+                        <p class="benefits__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                    </li>
+                    <li class="benefits__item benefits__icon_cow">
+                        <p class="benefits__text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                    </li>
+                    <li class="benefits__item benefits__icon_leaf">
+                        <p class="benefits__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                    </li>
+
+                    <li class="benefits__item benefits__icon_termometer">
+                        <p class="benefits__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="row-blocks">
+                <div class="news-preview row-block">
+                    <b class="news-preview__title">Новое в нашем блоге</b>
+                    <a class="news-preview__link" href="#">10  способов сервировки фруктовых щербетов к столу</a>
+                </div>
+                <div class="subscription row-block">
+                    <p class="subscription__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+                    <form class="subscription__email-form" action="index.html" method="post">
+                        <input type="email" placeholder="Электронная почта">
+                        <button class="btn" type="button" name="button">Отправить</button>
                     </form>
                 </div>
+            </div>
+
+        </div>
+        <div class="maps">
+            <div class="store-address">
+                <b class="store-address__title">Адрес главного офиса и<br> офлайн магазина:</b><br>
+                <b class="store-address__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</b><br> Для заказов по телефону:<br>
+                <b class="store-address__tel">8 812 450-25-25</b><br> (с 10 до 20 ежедневно)
+                <form class="feedback-form" action="index.html" method="post">
+                    <button class="feedback-form__btn btn" type="button" name="button">Форма обратной связи</button>
+                </form>
             </div>
         </div>
     </main>
@@ -127,17 +138,16 @@
             </div>
             <div class="footer-info">
                 <div class="footer-info__left-collumn">
-                    <a href="#"><b>Для поставщиков</b></a>
+                    <a href="#"><b>Для поставщиков</b></a><br>
                     <a href="#">О производстве</a>
                 </div>
                 <div class="footer-info__right-collumn">
-                    <a href="#">Наши документы</a>
+                    <a href="#">Наши документы</a><br>
                     <a href="#">Экологические стандарты</a>
                 </div>
             </div>
             <div class="footer-copyright">
-                <a href="#"><img src="img/htmlacademy-logo.png" alt="htmlacademy.ru"></a>
-                Сделано в <a href="#">HTML Academy</a> © 2016
+                <a href="#"><img src="img/htmlacademy-logo.png" alt="htmlacademy.ru"></a><br> Сделано в <a href="#">HTML Academy</a> © 2016
             </div>
         </div>
 
