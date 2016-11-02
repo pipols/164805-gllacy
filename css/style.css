@@ -31,7 +31,13 @@ h2 {
     font-weight: 500;
     line-height: 30px;
 }
-
+.icon::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
 .btn {
     display: inline-block;
     background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
@@ -61,11 +67,8 @@ h2 {
 
 .container {
     width: 1146px;
-    margin: 27px;
     margin: 0 auto;
 }
-
-header {}
 
 .header__container {
     display: flex;
@@ -118,18 +121,52 @@ header {}
 }
 
 .user-navigation__search_link {
+    position: relative;
     width: 32px;
     height: 32px;
 }
 
+.user-navigation__search_link::after {
+    left: 8px;
+    top: 7px;
+    width: 17px;
+    height: 17px;
+    background-position: -135px -147px;
+}
+.user-navigation__search_link:hover::after {
+    background-position: -30px -147px;
+}
+
 .user-navigation__login_link {
-    padding: 10px 16px 10px 43px;
+    position: relative;
+    padding: 8px 16px 8px 43px;
+}
+
+.user-navigation__login_link::after {
+    left: 14px;
+    top: 6px;
+    width: 21px;
+    height: 19px;
+    background-position: -135px -118px;
+}
+.user-navigation__login_link:hover::after {
+    background-position: -135px -89px;
 }
 
 .user-navigation__basket_link {
-    padding: 10px 34px 10px 44px;
+    position: relative;
+    padding: 8px 34px 8px 44px;
 }
-
+.user-navigation__basket_link::after {
+    left: 15px;
+    top: 6px;
+    width: 21px;
+    height: 20px;
+    background-position: -36px -5px;
+}
+.user-navigation__basket_link:hover::after {
+    background-position: -5px -5px;
+}
 .time-job {
     position: absolute;
     bottom: -60px;
@@ -219,6 +256,22 @@ main {}
     width: 267px;
 }
 
+.gallery__item_wrap {
+    position: relative;
+}
+
+.gallery__price {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 61px;
+    height: 61px;
+    background-position: -5px -64px;
+    background-repeat: no-repeat;
+    background-image: url(../img/spritesheet.png);
+}
+
 .benefits {
     margin-bottom: 40px;
     padding-top: 25px;
@@ -234,6 +287,7 @@ main {}
     line-height: 30px;
     padding-bottom: 20px;
     padding-left: 20px;
+    color: #323232;
 }
 
 .benefits__list {
@@ -242,10 +296,48 @@ main {}
 }
 
 .benefits__item {
+    position: relative;
     width: 560px;
     padding-left: 75px;
     padding-right: 5px;
     padding-bottom: 30px;
+}
+
+.benefits__text {
+    color: #323232;
+}
+
+.benefits__icon {
+    position: absolute;
+    left: 20px;
+    top: -15px;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.benefits__icon_ice-cream {
+    width: 49px;
+    height: 49px;
+    background-position: -76px -64px;
+}
+
+.benefits__icon_cow {
+    width: 48px;
+    height: 49px;
+    background-position: -67px -5px;
+}
+
+.benefits__icon_leaf {
+    width: 49px;
+    height: 49px;
+    background-position: -76px -123px;
+}
+
+.benefits__icon_termometer {
+    width: 48px;
+    height: 49px;
+    background-position: -177px -5px;
 }
 
 .row-blocks {
@@ -254,19 +346,20 @@ main {}
 }
 
 .row-block {
-    height: 220px;
+    min-height: 220px;
     width: 560px;
-    padding: 25px 20px;
     border-radius: 15px;
     background-color: #f8f7f4;
 }
 
 .news-preview {
     margin-right: 26px;
+    padding: 25px 20px;
     background-image: url(../img/strawberry-bg.png);
 }
 
 .news-preview__title {
+    color: #323232;
     font-weight: 500;
     display: block;
 }
@@ -281,9 +374,15 @@ main {}
 }
 
 .subscription {
-    border-radius: 15px;
-    border: 6px solid;
-    /*border-image: repeating-linear-gradient(-45deg, #92cdff 0px, #92cdff 10px, #f8f7f4 10px, #f8f7f4 20px, #fe9e90 20px, #fe9e90 30px) 1;*/
+    display: flex;
+    background-image: url(../img/post-pattern.png);
+}
+
+.subscription__wrap {
+    margin: 6px;
+    padding: 25px 20px;
+    border-radius: 10px;
+    background-color: #f8f7f4;
 }
 
 .subscription__email-form {
@@ -291,14 +390,15 @@ main {}
 }
 
 .subscription__text {
+    color: #323232;
     padding-bottom: 35px;
 }
 
 .subscription input {
+    flex-grow: 1;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    width: 368px;
     height: 44px;
     background-color: white;
     border: 1px solid rgba(178, 178, 178, 0.52);
@@ -311,7 +411,8 @@ main {}
     position: relative;
     background-color: rgba(150, 122, 220, 1);
     height: 430px;
-    width: inherit;
+    /*margin: 0;*/
+    /*width: 100vw;*/
 }
 
 .store-address {
@@ -352,13 +453,13 @@ main {}
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+    color: #323232;
 }
 
-.feedback-form {
-    margin: 0 auto;
-}
+.feedback-form {}
 
 .feedback-form__btn {
+    width: 100%;
     margin-top: 25px;
 }
 
@@ -378,12 +479,74 @@ footer .container {
 }
 
 .social-btn {
+    position: relative;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
     margin-right: 12px;
+    opacity: 0.8;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+}
+
+
+.social-btn:hover  {
+    border-color: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+}
+.social-btn:active {
+    border-color: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+    box-shadow: inset 0 2px 1px #888;
+}
+.btn-tw {
+    background-position: -178px -65px;
+}
+
+.btn-inst {
+    background-position: -136px -48px;
+}
+
+.btn-fb {
+    background-position: -126px -6px;
+}
+
+.btn-vk {
+    background-position: -167px -107px;
+}
+
+.icon-love {
+    position: relative;
+}
+
+.icon-love::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 2px;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 13px;
+    background-position: -5px -147px;
 }
 
 .footer-info {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
     display: flex;
     padding-top: 15px;
+}
+
+.footer-copyright {
+    color: #fefefe;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
 }
 
 .footer-info__left-collumn {
