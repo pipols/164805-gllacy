@@ -4,17 +4,38 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="container header__container">
+            <div class="header-menu-wrap">
             <div class="main-menu_wrap">
                 <img src="img/gllacy-shop-logo.svg" alt="gllacy" class="main-logo">
                 <nav class="main-menu">
                     <ul class="main-menu__list">
-                        <li class="main-menu__item"><a class="main-menu__item_link" href="catalog.html">Каталог</a></li>
+                        <li class="main-menu__item main-menu__item_drop-catalog "><a class="main-menu__item_link main-menu__item_link-drop " href="catalog.html">Каталог</a>
+                            <ul class="drop-catalog__list">
+                                <li class="drop-catalog__item drop-catalog__item-line">
+                                    <a class="drop-catalog__link drop-catalog__link-bold" href="#">Новинки</a>
+                                </li>
+                                <li class="drop-catalog__item">
+                                    <a class="drop-catalog__link" href="#">Сливочное</a>
+                                </li>
+                                <li class="drop-catalog__item">
+                                    <a class="drop-catalog__link" href="#">Щербеты</a>
+                                </li>
+                                <li class="drop-catalog__item">
+                                    <a class="drop-catalog__link" href="#">Фруктовый лёд</a>
+                                </li>
+                                <li class="drop-catalog__item">
+                                    <a class="drop-catalog__link" href="#">Мелорин</a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="main-menu__item"><a class="main-menu__item_link" href="#">Доставка и оплата</a></li>
                         <li class="main-menu__item"><a class="main-menu__item_link" href="#">О Компании</a></li>
                     </ul>
@@ -31,24 +52,32 @@
                     <a class="user-navigation__basket_link icon" href="#">Пусто</a>
                 </div>
             </div>
+            </div>
             <div class="time-job">
+                <div class="time-job-wrap">
                 <b class="time-job__time">С 10 до 20, ежедевно</b><br>
                 <b class="time-job__tel">8 812 450-25-25</b>
+                </div>
             </div>
         </div>
     </header>
     <main>
         <div class="container">
-            <div class="gift__row">
+            <div class="row-blocks">
                 <div class="gift__raspberries gift__row-block">
-                    <h2 class="gift__row-block_title">Малинка даром!</h2>
-                    <p class="gift__row-block_text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                    <a class="gift__row-block_link btn" href="#">Хочу варенье!</a>
+                    <div class="gift__row-block-wrap">
+                        <h2 class="gift__row-block_title">Малинка даром!</h2>
+                        <p class="gift__row-block_text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                        <div class="gift__row-block_link-wrap">
+                            <a class="gift__row-block_link btn" href="#">Хочу варенье!</a></div>
+                    </div>
                 </div>
                 <div class="gift__chocolate gift__row-block">
-                    <h2 class="gift__row-block_title">Шоколадки даром!</h2>
-                    <p class="gift__row-block_text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
-                    <a class="gift__row-block_link btn" href="#">Хочу шоколадки!</a>
+                    <div class="gift__row-block-wrap">
+                        <h2 class="gift__row-block_title">Шоколадки даром!</h2>
+                        <p class="gift__row-block_text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
+                        <div class="gift__row-block_link-wrap"><a class="gift__row-block_link btn" href="#">Хочу шоколадки!</a></div>
+                    </div>
                 </div>
             </div>
             <div class="gallery">
@@ -87,26 +116,23 @@
             <div class="benefits">
                 <h2 class="benefits__title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
                 <ul class="benefits__list">
-                    <li class="benefits__item ">
-                        <span class="benefits__icon_ice-cream benefits__icon"></span>
+                    <li class="benefits__item benefits__icon_ice-cream icon">
                         <p class="benefits__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
                     </li>
-                    <li class="benefits__item ">
-                        <span class="benefits__icon_cow benefits__icon"></span>
+                    <li class="benefits__item benefits__icon_cow icon">
                         <p class="benefits__text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
                     </li>
-                    <li class="benefits__item ">
-                        <span class="benefits__icon_leaf benefits__icon"></span>
+                    <li class="benefits__item benefits__icon_leaf icon">
                         <p class="benefits__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
                     </li>
-                    <li class="benefits__item ">
-                        <span class="benefits__icon_termometer benefits__icon"></span>
+                    <li class="benefits__item benefits__icon_termometer icon">
                         <p class="benefits__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
                     </li>
                 </ul>
             </div>
             <div class="row-blocks">
                 <div class="news-preview row-block">
+
                     <b class="news-preview__title">Новое в нашем блоге</b>
                     <a class="news-preview__link" href="#">10  способов сервировки фруктовых щербетов к столу</a>
                 </div>
@@ -123,13 +149,15 @@
 
         </div>
         <div class="maps">
-            <div class="store-address">
-                <b class="store-address__title">Адрес главного офиса и<br> офлайн магазина:</b><br>
-                <b class="store-address__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</b><br> Для заказов по телефону:<br>
-                <b class="store-address__tel">8 812 450-25-25</b><br> (с 10 до 20 ежедневно)
-                <form class="feedback-form" action="index.html" method="post">
-                    <button class="feedback-form__btn btn" type="button" name="button">Форма обратной связи</button>
-                </form>
+            <div class="container container__maps">
+                <div class="store-address">
+                    <b class="store-address__title">Адрес главного офиса и<br> офлайн магазина:</b><br>
+                    <b class="store-address__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</b><br> Для заказов по телефону:<br>
+                    <b class="store-address__tel">8 812 450-25-25</b><br> (с 10 до 20 ежедневно)
+                    <form class="feedback-form" action="index.html" method="post">
+                        <button class="feedback-form__btn btn" type="button" name="button">Форма обратной связи</button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>

@@ -4,54 +4,61 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="container header__container">
-            <div class="main-menu_wrap">
-                <img src="img/gllacy-shop-logo.svg" alt="gllacy" class="main-logo">
-                <nav class="main-menu">
-                    <ul class="main-menu__list">
-                        <li class="main-menu__item main-menu__item_drop-catalog "><a class="main-menu__item_link main-menu__item_link-active " href="catalog.html">Каталог</a>
-                            <ul class="drop-catalog__list">
-                                <li class="drop-catalog__item drop-catalog__item-line">
-                                    <a class="drop-catalog__link drop-catalog__link-bold" href="#">Новинки</a>
-                                </li>
-                                <li class="drop-catalog__item">
-                                    <a class="drop-catalog__link" href="#">Сливочное</a>
-                                </li>
-                                <li class="drop-catalog__item">
-                                    <a class="drop-catalog__link" href="#">Щербеты</a>
-                                </li>
-                                <li class="drop-catalog__item">
-                                    <a class="drop-catalog__link" href="#">Фруктовый лёд</a>
-                                </li>
-                                <li class="drop-catalog__item">
-                                    <a class="drop-catalog__link" href="#">Мелорин</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="main-menu__item"><a class="main-menu__item_link" href="#">Доставка и оплата</a></li>
-                        <li class="main-menu__item"><a class="main-menu__item_link" href="#">О Компании</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="user-navigation">
-                <div class="user-navigation__search">
-                    <a class="user-navigation__search_link icon" href="#"></a>
+            <div class="header-menu-wrap">
+                <div class="main-menu_wrap">
+                    <img src="img/gllacy-shop-logo.svg" alt="gllacy" class="main-logo">
+                    <nav class="main-menu">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__item main-menu__item_drop-catalog ">
+                                <a class="main-menu__item_link main-menu__item_link-drop  main-menu__item_link-active" href="catalog.html">Каталог</a>
+                                <ul class="drop-catalog__list">
+                                    <li class="drop-catalog__item drop-catalog__item-line">
+                                        <a class="drop-catalog__link drop-catalog__link-bold" href="#">Новинки</a>
+                                    </li>
+                                    <li class="drop-catalog__item">
+                                        <a class="drop-catalog__link" href="#">Сливочное</a>
+                                    </li>
+                                    <li class="drop-catalog__item">
+                                        <a class="drop-catalog__link" href="#">Щербеты</a>
+                                    </li>
+                                    <li class="drop-catalog__item">
+                                        <a class="drop-catalog__link" href="#">Фруктовый лёд</a>
+                                    </li>
+                                    <li class="drop-catalog__item">
+                                        <a class="drop-catalog__link" href="#">Мелорин</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-menu__item"><a class="main-menu__item_link" href="#">Доставка и оплата</a></li>
+                            <li class="main-menu__item"><a class="main-menu__item_link" href="#">О Компании</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="user-navigation__login">
-                    <a class="user-navigation__login_link icon" href="#">Вход</a>
-                </div>
-                <div class="user-navigation__basket">
-                    <a class="user-navigation__basket_link icon" href="#">Пусто</a>
+                <div class="user-navigation">
+                    <div class="user-navigation__search">
+                        <a class="user-navigation__search_link icon" href="#"></a>
+                    </div>
+                    <div class="user-navigation__login">
+                        <a class="user-navigation__login_link icon" href="#">Вход</a>
+                    </div>
+                    <div class="user-navigation__basket">
+                        <a class="user-navigation__basket_link icon" href="#">Пусто</a>
+                    </div>
                 </div>
             </div>
             <div class="time-job">
-                <b class="time-job__time">С 10 до 20, ежедевно</b><br>
-                <b class="time-job__tel">8 812 450-25-25</b>
+                <div class="time-job-wrap">
+                    <b class="time-job__time">С 10 до 20, ежедевно</b><br>
+                    <b class="time-job__tel">8 812 450-25-25</b>
+                </div>
             </div>
         </div>
     </header>
