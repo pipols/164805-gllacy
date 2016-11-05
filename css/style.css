@@ -29,6 +29,7 @@ h2 {
     font-weight: 500;
     line-height: 30px;
 }
+
 .icon::after {
     position: absolute;
     content: "";
@@ -36,6 +37,7 @@ h2 {
     background-repeat: no-repeat;
     display: block;
 }
+
 .btn {
     display: inline-block;
     background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
@@ -103,6 +105,71 @@ h2 {
     padding: 10px 13px;
     color: white;
 }
+.main-menu__item_link-active {
+    background-color: #d07058;
+    color: white;
+    border-radius: 50px;
+}
+
+.main-menu__item_link:hover {
+    background-color: #f7f6f3;
+    border-radius: 50px;
+    color: #333;
+}
+
+.main-menu__item_link:active {
+    background-color: #ededed;
+    box-shadow: inset 0 2px 1px dimgrey;
+    border-radius: 50px;
+    color: #333;
+}
+
+.main-menu__item_drop-catalog {
+    position: relative;
+}
+.main-menu__item_drop-catalog:hover > .drop-catalog__list {
+    display: block;
+}
+.drop-catalog__list {
+    display: none;
+    position: absolute;
+    top: 45px;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+}
+
+.drop-catalog__link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #323232;
+    display: block;
+    padding: 7px 13px;
+}
+
+.drop-catalog__link:hover {
+    background-color: #fbded7;
+}
+
+.drop-catalog__link:active {
+    background-color: #f6b5a5;
+}
+
+.drop-catalog__link-bold {
+    font-weight: 700;
+}
+
+.drop-catalog__item-line {
+    position: relative;
+}
+
+.drop-catalog__item-line::after {
+    content: "";
+    display: block;
+    width: 85%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 7px;
+}
 
 .user-navigation {
     display: flex;
@@ -119,12 +186,16 @@ h2 {
     margin-left: 10px;
     background-color: rgba(255, 255, 255, 0.2);
 }
-
+.user-navigation a:hover {
+    background-color: #f8f7f4;
+    color: #323232;
+}
 .user-navigation__search_link {
     position: relative;
     width: 32px;
     height: 32px;
 }
+
 
 .user-navigation__search_link::after {
     left: 8px;
@@ -133,6 +204,7 @@ h2 {
     height: 17px;
     background-position: -135px -147px;
 }
+
 .user-navigation__search_link:hover::after {
     background-position: -30px -147px;
 }
@@ -149,6 +221,7 @@ h2 {
     height: 19px;
     background-position: -135px -118px;
 }
+
 .user-navigation__login_link:hover::after {
     background-position: -135px -89px;
 }
@@ -157,6 +230,7 @@ h2 {
     position: relative;
     padding: 8px 34px 8px 44px;
 }
+
 .user-navigation__basket_link::after {
     left: 15px;
     top: 6px;
@@ -164,9 +238,11 @@ h2 {
     height: 20px;
     background-position: -36px -5px;
 }
+
 .user-navigation__basket_link:hover::after {
     background-position: -5px -5px;
 }
+
 .time-job {
     position: absolute;
     bottom: -60px;
@@ -491,16 +567,17 @@ footer .container {
     border-radius: 50px;
 }
 
-
-.social-btn:hover  {
+.social-btn:hover {
     border-color: rgba(255, 255, 255, 0.7);
     opacity: 1;
 }
+
 .social-btn:active {
     border-color: rgba(255, 255, 255, 0.7);
     opacity: 1;
     box-shadow: inset 0 2px 1px #888;
 }
+
 .btn-tw {
     background-position: -178px -65px;
 }
