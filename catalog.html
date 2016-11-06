@@ -45,12 +45,63 @@
                 <div class="user-navigation">
                     <div class="user-navigation__search">
                         <a class="user-navigation__search_link icon" href="#"></a>
+                        <div class="search__drop-menu">
+                            <form class="search__drop-menu_form" action="index.html" method="post">
+                                <div class="form-wrap">
+                                    <input id="drop-menu__search-form" type="search" name="search">
+                                    <label for="drop-menu__search-form">Что ищем?</label>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     <div class="user-navigation__login">
                         <a class="user-navigation__login_link icon" href="#">Вход</a>
+                        <div class="login__drop-menu">
+                            <form class="login__form" action="index.html" method="post">
+                                <div class="login__form-wrap form-wrap">
+                                    <input class="login__form_email" id="login__form_email" type="email">
+                                    <label for="login__form_email">Электронная почта</label>
+                                </div>
+                                <div class="login__form-wrap form-wrap">
+                                    <input class="login__form_password" id="login__form_password" type="password" name="name">
+                                    <label for="login__form_password">Пароль</label>
+                                </div>
+                                <div class="login__form-btn-wrap">
+                                    <button class="login__form-btn btn" type="submit" name="button">Войти</button>
+                                    <div class="login__form-link_wrap">
+                                        <a href="#">Забыли пароль?</a>
+                                        <a href="#">Новая регистрация</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     <div class="user-navigation__basket">
                         <a class="user-navigation__basket_link icon" href="#">Пусто</a>
+                        <div class="basket__drop-menu">
+                            <table>
+                                <tr class="basket__drop-menu_row">
+                                    <td class="cell-del"></td>
+                                    <td class="cell-img"></td>
+                                    <td class="cell-title">Пломбир с апельсиновым джемом</td>
+                                    <td class="cell-amount">1,5 кг х 200 руб</td>
+                                    <td class="cell-cost">300 руб.</td>
+                                </tr>
+                                <tr class="basket__drop-menu_row">
+                                    <td class="cell-del"></td>
+                                    <td class="cell-img"></td>
+                                    <td class="cell-title">Клубничный пломбир с присыпкой из белого шоколада</td>
+                                    <td class="cell-amount">1,5 кг х 300 руб</td>
+                                    <td class="cell-cost">450 руб.</td>
+                                </tr>
+                            </table>
+                            <div class="basket__drop-menu_cost-wrap">
+                                <div class="basket__drop-menu_cost">
+                                    Итого: 750 руб.
+                                </div>
+                                <button class="basket__order-btn btn" type="submit" name="button">Оформить заказ</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
