@@ -210,7 +210,6 @@ h2 {
     background-color: transparent;
 }
 
-
 .drop-catalog__item {
     background-color: #f8f7f4;
 }
@@ -302,8 +301,6 @@ h2 {
     color: #323232;
 }
 
-
-
 .user-navigation__search:hover .search__drop-menu {
     display: block;
 }
@@ -344,9 +341,11 @@ h2 {
     border-radius: 5px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
+
 .user-navigation__login:hover .login__drop-menu {
     display: block;
 }
+
 .login__form {
     display: flex;
     flex-grow: 1;
@@ -498,8 +497,27 @@ h2 {
 
 .gallery__item_wrap {
     position: relative;
+    text-align: center;
+    z-index: 3;
 }
 
+.gallery__item:hover .gallery__item_wrap::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 110%;
+    height: 100%;
+    top: -10px;
+    left: -5%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+.gallery__img {
+    position: relative;
+    z-index: 10;
+}
 .gallery__hit {
     display: block;
     position: absolute;
@@ -510,8 +528,20 @@ h2 {
     background-position: -5px -64px;
     background-repeat: no-repeat;
     background-image: url(../img/spritesheet.png);
+    z-index: 11;
 }
 
+.gallery__btn {
+    position: relative;
+    display: none;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    z-index: 6;
+}
+.gallery__item:hover .gallery__btn {
+    display: inline-block;
+    z-index: 7;
+}
 .benefits {
     margin-bottom: 40px;
     padding-top: 25px;
