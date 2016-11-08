@@ -477,6 +477,7 @@ h2 {
 }
 
 .gallery__item {
+    position: relative;
     width: 267px;
     margin-right: 26px;
 }
