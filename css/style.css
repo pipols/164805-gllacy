@@ -9,7 +9,6 @@
 
 body {
     margin: 0 auto;
-    color: white;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -334,7 +333,7 @@ body>input[type="radio"] {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
-.drop-catalog__list::before, .search__drop-menu::before, .login__drop-menu::before, .basket__drop-menu_row {
+.drop-catalog__list::before, .search__drop-menu::before, .login__drop-menu::before, .basket__drop-menu::before {
     content: "";
     position: absolute;
     top: -8px;
@@ -519,12 +518,17 @@ body>input[type="radio"] {
 .user-navigation__login_link:hover::after {
     background-position: -135px -89px;
 }
+
 .user-navigation__basket {
     position: relative;
 }
+
 .user-navigation__basket_link {
     position: relative;
     padding: 8px 34px 8px 44px;
+}
+.user-navigation__basket:hover  .basket__drop-menu {
+    display: block;
 }
 
 .user-navigation__basket_link::after {
@@ -540,118 +544,110 @@ body>input[type="radio"] {
 }
 
 .basket__drop-menu {
-  position: absolute;
-  top: 50px;
-  right: 150px;
-  display: block;
-  background-color: #f8f7f4;
-  border-radius: 5px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-  padding: 20px 15px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    display: none;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+    padding: 20px 15px;
+    color: #323232;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    z-index: 1000;
+    
+}
+
+.basket__drop-menu_row {
+    display: flex;
 }
 
 .basket__drop-menu_cost-wrap {
-  text-align: right;
+    text-align: right;
 }
-
 .cell-del {
-  display: block;
-  width: 5px;
-  height: 5px;
-  position: relative;
-  padding: 15px;
+    width: 35px;
+}
+.cell-del_link {
+    position: relative;
 }
 
-.cell-del:after {
-  content: "";
-  position: absolute;
-  top: 35%;
-  left: 45%;
-  width: 2px;
-  height: 10px;
-  background: #353535;
-  transform: rotate(-45deg);
+.cell-del_link::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 2px;
+    height: 13px;
+    background: #353535;
+    transform: rotate(-45deg);
 }
 
-.cell-del:before {
-  content: "";
-  position: absolute;
-  top: 35%;
-  left: 45%;
-  width: 2px;
-  height: 10px;
-  background: #353535;
-  transform: rotate(45deg);
+.cell-del_link::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 2px;
+    height: 13px;
+    background: #353535;
+    transform: rotate(45deg);
 }
 
 .cell-img {
-  width: 33px;
-  height: 33px;
-  padding-right: 10px;
+    padding-right: 10px;
 }
 
 .cell-title {
-  width: 220px;
-  padding-top: 10px;
-  padding-right: 30px;
+    width: 260px;
+    padding-top: 10px;
+    padding-right: 30px;
 }
 
 .cell-amount {
-  padding-top: 10px;
+    padding-top: 10px;
+    white-space: nowrap;
 }
 
 .cell-cost {
-  padding-top: 10px;
-  color: #999;
-  padding-right: 25px;
+    padding-top: 10px;
+    padding-left: 5px;
+    color: #999;
+    padding-right: 25px;
+    white-space: nowrap;
 }
 
 .cell-sum {
-  padding-top: 10px;
-  padding-right: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    white-space: nowrap;
 }
 
 .basket__drop-menu_table {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16px;
-  border-bottom: 1px solid #cacac7;
-  margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    border-bottom: 1px solid #cacac7;
+    margin-bottom: 15px;
 }
 
-.basket__drop-menu_row td {
-  vertical-align: top;
-  margin-bottom: 20px;
+.basket__drop-menu_row div {
+    vertical-align: top;
+    margin-bottom: 20px;
 }
 
 .basket__drop-menu_sum-total {
-  color: #333;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 18px;
-  padding-bottom: 15px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    padding-bottom: 15px;
 }
-
-.cell-del {
-    position: relative;
-    width: 2px;
-    height: 25px;
-    background: #2C2C2C;
-    transform: rotate(45deg);
-    margin: 40px auto;
+.basket__order-btn {
+    z-index: 100;
 }
-
-.cell-del:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2px;
-    height: 25px;
-    background: #2C2C2C;
-    transform: rotate(-90deg);
-}
-
 .time-job {
     display: flex;
     justify-content: flex-end;
