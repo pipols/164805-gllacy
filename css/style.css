@@ -967,6 +967,7 @@ label[for="btn-1"]:hover, label[for="btn-2"]:hover, label[for="btn-3"]:hover {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+    z-index: 10;
 }
 
 .store-address b {
