@@ -787,6 +787,26 @@ label[for="btn-1"]:hover, label[for="btn-2"]:hover, label[for="btn-3"]:hover {
     z-index: 11;
 }
 
+.gallery__img_wrap {
+    position: relative;
+    text-align: center;
+    z-index: 3;
+}
+
+.gallery__price_wrap {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    z-index: 20;
+}
+.gallery__price_value {
+    font-size: 45px;
+}
 .gallery__btn {
     position: relative;
     display: none;
@@ -1134,55 +1154,53 @@ footer .container {
     border: 2px solid white;
 }
 
-
 .pagination__wrap {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .pagination__item {
-  display: inline-block;
-  margin: 0 5px;
+    display: inline-block;
+    margin: 0 5px;
 }
 
 .pagination__link {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 1.5;
-  font-size: 16px;
-  font-weight: 500;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.pagination__link_prev,
-.pagination__link_next {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border: 2px solid rgba(255, 255, 255, 1);
-  border-left: 0;
-  border-bottom: 0;
-  vertical-align: middle;
+.pagination__link_prev, .pagination__link_next {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-left: 0;
+    border-bottom: 0;
+    vertical-align: middle;
 }
 
 .pagination__link_prev {
-  transform: rotate(-135deg);
+    transform: rotate(-135deg);
 }
 
 .pagination__link_next {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .pagination__link_active {
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 50px;
-  color: #323232;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50px;
+    color: #323232;
 }
 
 .pagination__link_end {
-  border-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
 }
