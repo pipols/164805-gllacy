@@ -172,7 +172,7 @@ label[for="btn-1"]:hover, label[for="btn-2"]:hover, label[for="btn-3"]:hover {
 
 /*============СТИЛИ ДЛЯ INPUT===============*/
 
-[type="search"], [type="email"], [type="password"] {
+[type="search"], [type="email"], [type="password"], [type="text"], textarea {
     color: #999;
     font-size: 16px;
     font-weight: 400;
@@ -183,11 +183,11 @@ label[for="btn-1"]:hover, label[for="btn-2"]:hover, label[for="btn-3"]:hover {
     padding-left: 20px;
 }
 
-[type="search"]:hover, [type="email"]:hover, [type="password"]:hover {
+[type="search"]:hover, [type="email"]:hover, [type="password"]:hover, textarea:hover {
     border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
-[type="search"]:focus, [type="email"]:focus, [type="password"]:focus {
+[type="search"]:focus, [type="email"]:focus, [type="password"]:focus, textarea:focus {
     border: 2px solid rgba(46, 136, 228, 0.52);
     outline: none;
 }
@@ -196,7 +196,7 @@ label[for="btn-1"]:hover, label[for="btn-2"]:hover, label[for="btn-3"]:hover {
     position: relative;
 }
 
-[type="search"]+label, [type="email"]+label, [type="password"]+label {
+[type="search"]+label, [type="email"]+label, [type="password"]+label, [type="text"]+label, textarea+label {
     position: absolute;
     top: 10px;
     left: 15px;
@@ -206,7 +206,7 @@ label[for="btn-1"]:hover, label[for="btn-2"]:hover, label[for="btn-3"]:hover {
     line-height: 24px;
 }
 
-[type="search"]:focus+label, [type="email"]:focus+label, [type="password"]:focus+label {
+[type="search"]:focus+label, [type="email"]:focus+label, [type="password"]:focus+label, [type="text"]:focus+label, textarea:focus+label {
     top: -15px;
     left: 15px;
     color: #5b9ddf;
@@ -1204,4 +1204,94 @@ footer .container {
 
 .pagination__link_end {
     border-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.modal-content {
+  position: fixed;
+  left: 50%;
+  top: 200px;
+  margin-left: -218px;
+  width: 435px;
+  padding: 25px;
+  padding-top: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #f8f7f4;
+  z-index: 1000;
+  display: none;
+}
+
+.modal-content input {
+  display: block;
+  width: 265px;
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+.modal-content__title {
+  color: #323232;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.modal-content__textarea {
+  width: 100%;
+  height: 155px;
+  resize: none;
+  margin-bottom: 25px;
+}
+
+.modal-content__btn {
+  float: right;
+}
+
+.modal-content__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 0;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content__close::before,
+.modal-content__close::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+}
+
+.modal-content__close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content__close::after {
+  transform: rotate(-45deg);
+}
+.modal-overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: none;;
+}
+.modal-overlay_show {
+    display: block;
+}
+.modal-content_show {
+    display: block;
 }

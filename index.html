@@ -293,11 +293,33 @@
                 </div>
 
             </footer>
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=MqT4CyLwfoD4PZr6gsuLuahs43JyHXph&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=map"></script>
-        </div>
+            <div class="modal-content">
+                <button class="modal-content__close" type="button"></button>
+                <h2 class="modal-content__title">Мы обязательно вам ответим!</h2>
+                <form action="">
+                    <div class="form-wrap">
+                        <input id="modal-content__name" type="text" />
+                        <label for="modal-content__name">Как вас зовут?</label>
+                    </div>
+                    <div class="form-wrap">
+                        <input id="modal-content__email" type="email" />
+                        <label for="modal-content__email">Ваша почта для ответа?</label>
+                    </div>
+                    <div class="form-wrap">
+                        <textarea class="modal-content__textarea" name="" id="modal-content__textarea" cols="30" rows="10"></textarea>
+                        <label for="modal-content__textarea">Напишите что-нибудь...</label>
+                    </div>
+                    <button class="modal-content__btn btn" type="submit">Отправить</button>
+                </form>
+            </div>
+            <div class="modal-overlay"></div>
+                </div>
     </div>
 
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=MqT4CyLwfoD4PZr6gsuLuahs43JyHXph&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=map"></script>
+    <script type="text/javascript" charset="utf-8" async src="js/popup.js">
 
+    </script>
 </body>
 
 </html>
