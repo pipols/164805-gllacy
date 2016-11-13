@@ -6,26 +6,18 @@ var modal_content_close = document.querySelector(".modal-content__close");
 
 feedback_form_btn.addEventListener("click", function (event) {
     event.preventDefault();
-    console.log("нажата кнопка формы");
     modal_content.classList.add("modal-content_show");
-    console.log("форма открыта");
     modal_overlay.classList.add("modal-overlay_show");
-    console.log("оверлей открыт");
 });
 
 modal_content_close.addEventListener("click", function (event) {
     event.preventDefault();
-    console.log("клик на крестик");
     modal_content.classList.remove("modal-content_show");
-    console.log("убрал окно формы");
     modal_overlay.classList.remove("modal-overlay_show");
-    console.log("убрал оверлей");
 });
 
 modal_overlay.addEventListener("click", function (event) {
     event.preventDefault();
     modal_content.classList.remove("modal-content_show");
-    console.log("убрал окно формы оверлеем");
     modal_overlay.classList.remove("modal-overlay_show");
-    console.log("убрал оверлей оверлеем");
 });
