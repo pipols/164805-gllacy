@@ -17,14 +17,14 @@
                     <a href="index.html"><img src="img/gllacy-shop-logo.svg" alt="gllacy" class="main-logo"></a>
                     <nav class="main-menu">
                         <ul class="main-menu__list">
-                            <li class="main-menu__item main-menu__item_drop-catalog ">
-                                <a class="main-menu__item_link main-menu__item_link-drop  main-menu__item_link-active" href="catalog.html">Каталог</a>
+                            <li class="main-menu__item main-menu__item_drop-catalog main-menu__item_link-active">
+                                <a class="main-menu__item_link main-menu__item_link-drop  " href="catalog.html">Каталог</a>
                                 <ul class="drop-catalog__list">
                                     <li class="drop-catalog__item drop-catalog__item-line">
                                         <a class="drop-catalog__link drop-catalog__link-bold" href="#">Новинки</a>
                                     </li>
                                     <li class="drop-catalog__item">
-                                        <a class="drop-catalog__link" href="#">Сливочное</a>
+                                        <a class="drop-catalog__link drop-catalog__link_active" href="#">Сливочное</a>
                                     </li>
                                     <li class="drop-catalog__item">
                                         <a class="drop-catalog__link" href="#">Щербеты</a>
@@ -69,15 +69,15 @@
                                 <div class="login__form-btn-wrap">
                                     <button class="login__form-btn btn" type="submit" name="button">Войти</button>
                                     <div class="login__form-link_wrap">
-                                        <a href="#">Забыли пароль?</a>
+                                        <a href="#">Забыли пароль?</a><br>
                                         <a href="#">Новая регистрация</a>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="user-navigation__basket">
-                        <a class="user-navigation__basket_link icon" href="#">Пусто</a>
+                    <div class="user-navigation__basket basket_link_active">
+                        <a class="user-navigation__basket_link icon " href="#">2 товара</a>
                         <div class="basket__drop-menu">
                             <div class="basket__drop-menu_table">
                                 <div class="basket__drop-menu_row">
@@ -122,7 +122,7 @@
     <main>
         <div class="container">
             <ul class="breadcrumbs">
-                <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
                 <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
                 <li class="breadcrumbs__item">Сливочное</li>
             </ul>
@@ -146,7 +146,14 @@
                     <div class="form-title">
                         цена: <output id="price-min" name="price-min"></output>0 руб. - <output id="price-max" name="price-max"></output> 500 руб.
                     </div>
-                    <input type="range" name="name" value="">
+                    <div class="form__range">
+                        <div class="form__range_line">
+                            <div class="form__range_line-active">
+                                <div class="form__range_line-min"></div>
+                                <div class="form__range_line-max"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="sorting-form_wrap">
@@ -355,7 +362,7 @@
                 </div>
             </div>
             <div class="footer-copyright">
-                <a href="#"><img src="img/htmlacademy-logo.png" alt="htmlacademy.ru"></a><br> Сделано в <a href="#">HTML Academy</a> © 2016
+                <a href="#"><img src="img/htmlacademy-logo.png" alt="htmlacademy.ru"></a><br> Сделано в <a class="htmlacademy" href="#">HTML Academy</a> © 2016
             </div>
         </div>
 

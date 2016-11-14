@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -28,7 +27,7 @@
                                                 <a class="drop-catalog__link drop-catalog__link-bold" href="#">Новинки</a>
                                             </li>
                                             <li class="drop-catalog__item">
-                                                <a class="drop-catalog__link" href="#">Сливочное</a>
+                                                <a class="drop-catalog__link" href="catalog.html">Сливочное</a>
                                             </li>
                                             <li class="drop-catalog__item">
                                                 <a class="drop-catalog__link" href="#">Щербеты</a>
@@ -74,14 +73,15 @@
                                             <button class="login__form-btn btn" type="submit" name="button">Войти</button>
                                             <div class="login__form-link_wrap">
                                                 <a href="#">Забыли пароль?</a>
-                                                <a href="#">Новая регистрация</a>
+                                                <br>
+                                                    <a href="#">Новая регистрация</a>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
-                            <div class="user-navigation__basket">
-                                <a class="user-navigation__basket_link icon" href="#">Пусто</a>
+                            <div class="user-navigation__basket basket_link_active">
+                                <a class="user-navigation__basket_link icon " href="#">2 товара</a>
                                 <div class="basket__drop-menu">
                                     <div class="basket__drop-menu_table">
                                         <div class="basket__drop-menu_row">
@@ -236,9 +236,10 @@
                     </div>
                     <div class="row-blocks">
                         <div class="news-preview row-block">
-
-                            <b class="news-preview__title">Новое в нашем блоге</b>
-                            <a class="news-preview__link" href="#">10  способов сервировки фруктовых щербетов к столу</a>
+                            <div class="news-preview_wrap">
+                                <b class="news-preview__title">Новое в нашем блоге</b>
+                                <a class="news-preview__link" href="#">10  способов сервировки фруктовых щербетов к столу</a>
+                            </div>
                         </div>
                         <div class="subscription row-block">
                             <div class="subscription__wrap">
@@ -288,7 +289,7 @@
                         </div>
                     </div>
                     <div class="footer-copyright">
-                        <a href="#"><img src="img/htmlacademy-logo.png" alt="htmlacademy.ru"></a><br> Сделано в <a href="#">HTML Academy</a> © 2016
+                        <a href="#"><img src="img/htmlacademy-logo.png" alt="htmlacademy.ru"></a><br> Сделано в <a class="htmlacademy" href="#">HTML Academy</a> © 2016
                     </div>
                 </div>
 
@@ -296,7 +297,7 @@
             <div class="modal-content">
                 <button class="modal-content__close" type="button"></button>
                 <h2 class="modal-content__title">Мы обязательно вам ответим!</h2>
-                <form action="">
+                <form action="#">
                     <div class="form-wrap">
                         <input id="modal-content__name" type="text" />
                         <label for="modal-content__name">Как вас зовут?</label>
@@ -306,19 +307,18 @@
                         <label for="modal-content__email">Ваша почта для ответа?</label>
                     </div>
                     <div class="form-wrap">
-                        <textarea class="modal-content__textarea" name="" id="modal-content__textarea" cols="30" rows="10"></textarea>
+                        <textarea class="modal-content__textarea" name="modal-content__textarea" id="modal-content__textarea" cols="30" rows="10"></textarea>
                         <label for="modal-content__textarea">Напишите что-нибудь...</label>
                     </div>
                     <button class="modal-content__btn btn" type="submit">Отправить</button>
                 </form>
             </div>
             <div class="modal-overlay"></div>
-                </div>
+        </div>
     </div>
 
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=MqT4CyLwfoD4PZr6gsuLuahs43JyHXph&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=map"></script>
     <script type="text/javascript" charset="utf-8" async src="js/popup.js">
-
     </script>
 </body>
 
